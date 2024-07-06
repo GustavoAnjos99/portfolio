@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Gustavo Dos Anjos</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="apresentacao">
+            <div>
+                <h3 class="txta">Olá, eu sou o</h3>
+                <h1 class="txtb">Gustavo, <br>dev full-stack.</h1>
+            </div>
+            <div style="width: 30%;">
+                <img alt="foto de mim!" src="img/fotoGustavo.jpeg" id="fotog">
+            </div>
+        </div>
+        
+        <div class="contatos">
+            <div class="conts">
+                <p id="email">gustavoanjos160@gmail.com</p><img class="icon" src="img/icons/email.png">
+            </div>
+            <div class="conts" id="cm">
+                <p><a target="_blank" href="https://github.com/GustavoAnjos99">GustavoAnjos99</a></p><img
+                class="icon" src="img/icons/github.png">
+            </div>
+            <div class="conts">
+                <p><a target="_blank" href="https://www.linkedin.com/in/gustavo-dos-anjos-campos-530b42278">Gustavo
+                    Dos
+                    Anjos</a></p><img class="icon" src="img/icons/linkedin.png">
+                </div>
+            </div>
+            <div class="setap">
+                <div class="seta">↓</div>
+            </div>
+            
+            <div class="sm">
+                <h1>Sobre mim</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nulla explicabo pariatur earum cumque
+                    in
+                    accusantium suscipit, ab, ex mollitia distinctio magni. Eaque ducimus quia cum ipsum sit, laborum
+                    doloribus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nulla explicabo pariatur earum cumque
+                    in
+                    accusantium suscipit, ab, ex mollitia distinctio magni. Eaque ducimus quia cum ipsum sit, laborum
+                    doloribus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nulla explicabo pariatur earum cumque
+                    in
+                    accusantium suscipit, ab, ex mollitia distinctio magni. Eaque ducimus quia cum ipsum sit, laborum
+                    doloribus.</p>
+            </div>
+            <div class="projetos">
+                <h1>Meus Projetos</h1>
+
+                <div class="proj">
+                    <img src="img/portal360.png">
+                    <div>
+                        <a target="_blank" href="https://portal-360.vercel.app">
+                            <h3 class="title">Portal 360<img class="iconl" src="img/icons/link.png"></h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nulla explicabo pariatur
+                            earum
+                            cumque in accusantium suscipit, ab, ex mollitia distinctio magni. Eaque ducimus quia cum
+                            ipsum
+                            sit, laborum doloribus.</p>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="img/ateliechocolate.png">
+                    <div>
+                        <a target="_blank" href="https://sistema-atelie-do-chocolate.vercel.app">
+                            <h3 class="title">Ateliê do chocolate<img class="iconl" src="img/icons/link.png"></h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nulla explicabo pariatur
+                            earum
+                            cumque in accusantium suscipit, ab, ex mollitia distinctio magni. Eaque ducimus quia cum
+                            ipsum
+                            sit, laborum doloribus.</p>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="img/barberfashion.png">
+                    <div>
+                        <h3 class="title">Barberfashion (não hospedado)<img class="iconl" src="img/icons/link.png"></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nulla explicabo pariatur
+                            earum
+                            cumque in accusantium suscipit, ab, ex mollitia distinctio magni. Eaque ducimus quia cum
+                            ipsum
+                            sit, laborum doloribus.</p>
+                    </div>
+                </div>
+                <div class="proj">
+                    <img src="img/futsimulator.png">
+                    <div>
+                        <a target="_blank" href="https://futsimulator.vercel.app">
+                            <h3 class="title">Fut Simulator<img class="iconl" src="img/icons/link.png"></h3>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nulla explicabo pariatur
+                            earum
+                            cumque in accusantium suscipit, ab, ex mollitia distinctio magni. Eaque ducimus quia cum
+                            ipsum
+                            sit, laborum doloribus.</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <h3>Agora que nos conhecemos, que tal entrar em contato?</h3>
+                <div class="contatos">
+                    <div class="conts">
+                        <p id="email2">gustavoanjos160@gmail.com</p><img class="icon" src="img/icons/email.png">
+                    </div>
+                    <div class="conts" id="cm">
+                        <p><a target="_blank" href="https://github.com/GustavoAnjos99">GustavoAnjos99</a></p><img
+                            class="icon" src="img/icons/github.png">
+                    </div>
+                    <div class="conts">
+                        <p><a target="_blank"
+                                href="https://www.linkedin.com/in/gustavo-dos-anjos-campos-530b42278">Gustavo
+                                Dos
+                                Anjos</a></p><img class="icon" src="img/icons/linkedin.png">
+                    </div>
+                </div>
+                <p>Gustavo dos anjos campos. 2024</p>
+            </footer>
+            <br>
+    </div>
+
+    <script>
+        document.getElementById('email').addEventListener('click', copy);
+        document.getElementById('email2').addEventListener('click', copy);
+
+        function copy() {
+            const emailText = document.getElementById('email').textContent;
+            navigator.clipboard.writeText(emailText)
+            Swal.fire({
+                position: "bottom-start",
+                title: "E-mail copiado para área de transferência",
+                color: '#000',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
