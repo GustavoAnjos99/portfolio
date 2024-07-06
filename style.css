@@ -30,6 +30,7 @@ h3 {
 
 p , a {
     font-family: 'interlight';
+    font-size: 1.2vw;
 }
 
 body {
@@ -191,6 +192,7 @@ footer > div {
     width: 100%;
 }
 
+
 footer > .contatos > .conts {
     border: none;
     font-size: 1.2vw;
@@ -220,6 +222,9 @@ footer > .contatos > .conts > .icon {
 }
 
 @media (max-width: 1200px) {
+    footer > .contatos {
+        flex-direction: column;
+    }
     .container{
         margin: 0 3%;
     }
