@@ -19,11 +19,7 @@ h1 {
     font-family: 'interblack';
     font-size: 6vw;
 }
-h2 {
-    font-family: 'intersemibold';
-    font-size: 2vw;
-}
-h3 {
+h2, h3 {
     font-family: 'intersemibold';
     font-size: 2vw;
 }
@@ -121,7 +117,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 15%;
+    height: 20%;
 }
 .seta {
     text-align: center;
@@ -153,9 +149,14 @@ a {
 .proj {
     margin: 20px 0;
     display: flex;
+    align-items: center;
 }
 .proj > div {
     margin: 20px;
+}
+
+.proj > p {
+    text-align: justify;
 }
 
 .title:hover {
@@ -203,14 +204,6 @@ footer > .contatos > .conts > .icon {
     margin-left: 30px;
 }
 
-.v1 {
-    position: fixed;
-    pointer-events: none;
-    z-index: 3;
-    top:0;
-    width: 100%;
-    height: 100vh;
-}
 
 @keyframes animacao-seta {
     0%, 100% {
@@ -230,5 +223,14 @@ footer > .contatos > .conts > .icon {
     }
     .setap{
         display: none;
+    }
+    .apresentacao {
+        margin-top: 50px;
+    }
+    p , a {
+        font-size: 1.6vw;
+    }
+    h3 {
+        font-size: 2.3vw;
     }
 }
