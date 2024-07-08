@@ -259,3 +259,18 @@ footer > .contatos > .conts > .icon {
         flex-direction: column;
     }
 }
+
+@media (max-width: 615px) {
+    .conts > p {
+        width: auto;
+        margin-left: 30px;
+    }
+    
+    .conts {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .conts > img {
+        margin-right: 30px;
+    }
+}
