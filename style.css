@@ -215,8 +215,26 @@ footer > .contatos > .conts > .icon {
 }
 
 @media (max-width: 1200px) {
+    .contatos {
+        flex-direction: column;
+        align-items:center;
+    }
+    .conts {
+        margin: 20px 0;
+        justify-content: space-around;
+    }
+    .conts > img {
+        width: 4%;
+    }
+    .conts > p {
+        width: 500px;
+    }
     footer > .contatos {
         flex-direction: column;
+    }
+    footer > .contatos  > .conts{
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
     }
     .container{
         margin: 0 3%;
@@ -228,9 +246,16 @@ footer > .contatos > .conts > .icon {
         margin-top: 50px;
     }
     p , a {
-        font-size: 1.6vw;
+        font-size: 2.5vw;
     }
     h3 {
-        font-size: 2.3vw;
+        font-size: 3vw;
+    }
+    .proj > img {
+        width: 90%;
+        margin: 0 20px;
+    }
+    .proj {
+        flex-direction: column;
     }
 }
