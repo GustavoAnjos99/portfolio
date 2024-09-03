@@ -95,6 +95,19 @@ body {
     border: 1px solid black;
     font-size: 1.5vw;
     background-color: white;
+
+    box-shadow: none;
+    transform: translateY(4px) !important;
+    transition: all ease-in 0.2s;
+    opacity: 1 !important;
+}
+
+.conts:hover {
+    box-shadow: 10px 10px #000;
+    border: 2px solid #000 !important;
+    transition: all ease-in 0.15s !important;
+    cursor: pointer;
+    width: 110%;
 }
 
 .conts > p {
@@ -106,10 +119,6 @@ body {
     margin: 0 20px;
 }
 
-.conts > p:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 a:visited {
     color: black;
@@ -118,29 +127,75 @@ a {
     text-decoration: none;
 }
 
-.setap {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 20%;
-}
-.seta {
-    text-align: center;
-    font-family: interblack;
-    font-size: 80px;
-    margin: 30px;
-    animation: animacao-seta 1s linear infinite;
-}
-
 .sm {
     padding: 20px;
-    border: 1px solid black;
     margin: 50px 0;
+    border: 1px solid black;
     background-color: white;
 }
 .sm > h1 {
     margin:0;
     margin-bottom: 30px;
+}
+
+.skills {
+    padding: 20px;
+    margin: 50px 0;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.skills > h1 {
+    margin: 0;
+}
+
+.habilidades {
+    margin-bottom: 50px;
+}
+
+.hardskills > h2 {
+    font-size: 2.5vw;
+    margin-left: 5px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.grid-lin {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.grid-lin > img {
+    width: 100%;
+}
+
+.grid-lin > div {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    width: 12%;
+    height: 80%;
+
+    box-shadow: none;
+    transform: translateY(4px) !important;
+    transition: all ease-in 0.2s;
+    opacity: 1 !important;
+}
+.grid-lin > div:hover{
+    box-shadow: 10px 10px #000;
+    cursor: pointer;
+    border: 2px solid #000 !important;
+    transition: all ease-in 0.15s !important;
+    cursor: pointer;
+    width: 16%;
+    height: 16%;
+}
+.grid-lin > div > p {
+    font-weight: bolder;
 }
 
 .projetos {
@@ -153,10 +208,28 @@ a {
     margin:0;
     margin-bottom: 30px;
 }
+.projetos > h2 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 2.5vw;
+}
 .proj {
     margin: 20px 0;
     display: flex;
     align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: none;
+    transform: translateY(4px) !important;
+    transition: all ease-in 0.2s;
+    opacity: 1 !important;
+}
+
+.proj:hover {
+    box-shadow: 10px 10px #000;
+    border: 2px solid #000 !important;
+    transition: all ease-in 0.15s !important;
+    cursor: pointer;
 }
 .proj > div {
     margin: 20px;
@@ -166,6 +239,20 @@ a {
     text-align: justify;
 }
 
+.pi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pi > .proj {
+    flex-direction: column;
+    width:100%;
+    margin: 0 15px;
+}
+
+
+
 .title:hover {
     text-decoration: underline;
     cursor: pointer;
@@ -173,18 +260,86 @@ a {
 
 .proj > img {
     padding: 10px;
-    border: 1px solid black;
     height: fit-content;
-    width: 30%;
+    width: 60%;
     image-rendering:optimizeQuality;
 }
 
+.pci > img {
+    padding: 10px;
+    height: fit-content;
+    width: 40%;
+    image-rendering:optimizeQuality;
+    margin-right: 20px;
+
+}
+
+.pci {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: none;
+    transform: translateY(4px) !important;
+    transition: all ease-in 0.2s;
+    opacity: 1 !important;
+}
+.pci:hover {
+        box-shadow: 10px 10px #000;
+        border: 2px solid #000 !important;
+        transition: all ease-in 0.15s !important;
+        cursor: pointer;
+
+}
 .icon {
     width: 10%;
 }
 .iconl {
     margin-left: 10px;
-    width: 20px;
+    width: 5%;
+}
+
+.modal {
+    position: fixed; 
+    z-index: 1; 
+    background-color: white; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 10px 50px;
+    max-width: 50vw;
+
+    box-shadow: 10px 10px #000;
+    border: 2px solid #000 !important;
+}
+
+.modal > img {
+    padding: 10px;
+    height: fit-content;
+    width: 60%;
+    image-rendering:optimizeQuality;
+}
+
+.backModal {
+    background-color: rgba(172, 172, 172, 0.459);
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    visibility: hidden;
+}
+
+[name="fecharModals"] {
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+[name="fecharModals"]:hover {
+    cursor: pointer;
+    background-color: rgba(192, 192, 192, 0.781);
+    border-radius: 10%;
 }
 
 footer {
@@ -198,7 +353,7 @@ footer {
 }
 
 footer > div {
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -210,16 +365,6 @@ footer > .contatos > .conts {
 footer > .contatos > .conts > .icon {
     width: 25px;
     margin-left: 30px;
-}
-
-
-@keyframes animacao-seta {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
 }
 
 @media (max-width: 1200px) {
