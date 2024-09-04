@@ -140,7 +140,6 @@ a {
 
 .skills {
     padding: 20px;
-    margin: 50px 0;
     border: 1px solid black;
     background-color: white;
 }
@@ -153,32 +152,40 @@ a {
     margin-bottom: 50px;
 }
 
+.hardskills {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100px;
+}
 .hardskills > h2 {
     font-size: 2.5vw;
-    margin-left: 5px;
-    margin-top: 100px;
-    margin-bottom: 10px;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
 }
 
 .grid-lin {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .grid-lin > img {
     width: 100%;
+    height: 100%;
 }
 
 .grid-lin > div {
-    margin: 0 10px;
+    width:20%;
+    height: 20%;
+    margin: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid black;
-    padding: 10px;
-    width: 12%;
-    height: 80%;
+    padding: 1rem;
 
     box-shadow: none;
     transform: translateY(4px) !important;
@@ -191,8 +198,6 @@ a {
     border: 2px solid #000 !important;
     transition: all ease-in 0.15s !important;
     cursor: pointer;
-    width: 16%;
-    height: 16%;
 }
 .grid-lin > div > p {
     font-weight: bolder;
@@ -214,7 +219,7 @@ a {
     font-size: 2.5vw;
 }
 .proj {
-    margin: 20px 0;
+    gap: 1rem;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -243,15 +248,15 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height:max-content;
 }
 
 .pi > .proj {
     flex-direction: column;
     width:100%;
     margin: 0 15px;
+    height: 100%;
 }
-
-
 
 .title:hover {
     text-decoration: underline;
@@ -366,8 +371,31 @@ footer > .contatos > .conts > .icon {
     width: 25px;
     margin-left: 30px;
 }
+@media (max-width: 1670px) {
+    .pi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:max-content;
+    }
+    
+    .pi > .proj {
+        flex-direction: row;
+        width:100%;
+        margin: 1rem 30px;
+        height: 100%;
+        align-items: flex-start;
+        border: 1px solid black;
+    }
 
-@media (max-width: 1200px) {
+    .proj > img {
+        width: 40%;
+    }
+    #titltepi {
+        text-align: start;
+    }
+}
+@media (max-width: 1220px) {
     .contatos {
         flex-direction: column;
         align-items:center;
@@ -386,8 +414,7 @@ footer > .contatos > .conts > .icon {
         flex-direction: column;
     }
     footer > .contatos  > .conts{
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
+        border: 1px solid black;
     }
     .container{
         margin: 0 3%;
@@ -401,15 +428,16 @@ footer > .contatos > .conts > .icon {
     p , a {
         font-size: 2.5vw;
     }
-    h3 {
-        font-size: 3vw;
+    h3, h2 {
+        font-size: 3.5vw;
+    }
+    .grid-lin > img {
+        width: 50%;
+        height: 50%;
     }
     .proj > img {
         width: 90%;
         margin: 0 20px;
-    }
-    .proj {
-        flex-direction: column;
     }
 }
 
@@ -425,5 +453,8 @@ footer > .contatos > .conts > .icon {
     }
     .conts > img {
         margin-right: 30px;
+    }
+    h3, h2 {
+        font-size: 3vw;
     }
 }
